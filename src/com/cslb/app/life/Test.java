@@ -1,4 +1,5 @@
 package com.cslb.app.life;
+
 //cyh
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -7,78 +8,80 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		//À²À²À²À²À²À²À²À²À²À²À²
-		// ÎÒÔø¾­»®¹ýÉ½ºÓ´óº££¬ÎÒÔø
-		// ÉúÃüÖÜÆÚ £¬ ´Ó ´´½¨ --- Ö´ÐÐ --- Ïú»Ù
-//À²À²À²À²À²À²À²À²À²À²À²
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É½ï¿½Ó´óº££ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ --- Ö´ï¿½ï¿½ --- ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		//
-		// ioc ÈÝÆ÷ Êý¾Ý ×¢Èë person
-//À²À²À²À²À²À²À²À²À²À²À²
+		// ioc ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ×¢ï¿½ï¿½ person
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		// Person per = new Person();
 		//
-		// per.setName("ÕÅÈý");
+		// per.setName("ï¿½ï¿½ï¿½ï¿½");
 
-//À²À²À²À²À²À²À²À²À²À²À²
-		// ioc ÈÝÆ÷ ¶ÔÏó µ÷ÓÃ xml ÎÄ¼þ ¡£ ÔÚÍ¨¹ýÕâ¸ö¶ÔÏó µ÷ÓÃ bean µÄid ½øÐÐ Êý¾Ý ×¢Èë £¬
-//À²À²À²À²À²À²À²À²À²À²À²
-		// ioc ÈÝÆ÷ ¿ÉÒÔ ¶ÔÏó bean ½øÐÐ ÉúÃüÖÜÆÚµÄ¹ÜÀí
-//À²À²À²À²À²À²À²À²À²À²À²
-		// µ±Ò»¸öbean ±»´´½¨³öÀ´µÄÊ±ºò£¬ ¾Í»á ÏûºÄÄÚ´æ ¿Õ¼ä£¬ ÎªÁË ½ÚÔ¼ ÄÚ´æ £¬ ¾ÍÒªÓÐ ´´½¨ £¬ ÓÐÏú»Ù
-System.out.println(111);
-		// ¼ÈÈ» Òª´´½¨ µ½Ïú»Ù£¬ ¾ÍÒªÖªµÀ Õâ¸öbean ÒªÖ´ÐÐ Ê²Ã´ÑùµÄ·½·¨
-		//ssssss
-		// 1 ¡¢ bean Àà µÄ ¹¹Ôì·½·¨
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ioc ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ xml ï¿½Ä¼ï¿½ ï¿½ï¿½ ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ bean ï¿½ï¿½id ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ×¢ï¿½ï¿½ ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ioc ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ bean ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÚµÄ¹ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½Ò»ï¿½ï¿½bean ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ ï¿½Í»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ ï¿½Õ¼ä£¬ Îªï¿½ï¿½ ï¿½ï¿½Ô¼ ï¿½Ú´ï¿½ ï¿½ï¿½ ï¿½ï¿½Òªï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		System.out.println(111);
+		// ï¿½ï¿½È» Òªï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ù£ï¿½ ï¿½ï¿½ÒªÖªï¿½ï¿½ ï¿½ï¿½ï¿½bean ÒªÖ´ï¿½ï¿½ Ê²Ã´ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
+		// ssssss
+		// 1 ï¿½ï¿½ bean ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ì·½ï¿½ï¿½
 
-		// 2 ¡¢ bean ÖÐ ´«Öµ·½·¨
+		// 2 ï¿½ï¿½ bean ï¿½ï¿½ ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½
 
-		// 3 ¡¢ bean ³õÊ¼»¯·½·¨
+		// 3 ï¿½ï¿½ bean ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-		// 4 ¡¢ ¶ÔÓÚ bean ÀàµÄ²Ù×÷
+		// 4 ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ bean ï¿½ï¿½Ä²ï¿½ï¿½ï¿½
 
-		// 5 ¡¢ bean Ïú»Ù·½·¨
+		// 5 ï¿½ï¿½ bean ï¿½ï¿½ï¿½Ù·ï¿½ï¿½ï¿½
 
-		// 1 ¡¢ bean Àà µÄ ¹¹Ôì·½·¨
+		// 1 ï¿½ï¿½ bean ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ì·½ï¿½ï¿½
 
-		// 2 ¡¢ bean ÖÐ ´«Öµ·½·¨
+		// 2 ï¿½ï¿½ bean ï¿½ï¿½ ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½
 
-		// 3¡¢ ºóÖÃ ´¦ÀíÆ÷ÖÐµÄ before ·½·¨
+		// 3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ before ï¿½ï¿½ï¿½ï¿½
 
-		// 4 ¡¢ bean ³õÊ¼»¯·½·¨ ClassPathXmlApplicationContext con = new
+		// 4 ï¿½ï¿½ bean ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ClassPathXmlApplicationContext con = new
 		// ClassPathXmlApplicationContext("bean-life.xml");
 
-		// 5 ºóÖÃ ´¦ÀíÆ÷ÖÐµÄ after ·½·¨
+		// 5 ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ after ï¿½ï¿½ï¿½ï¿½
 
-		// 6 ¡¢ ¶ÔÓÚ bean ÀàµÄ²Ù×÷ System.out.println(per.getName());
+		// 6 ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ bean ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ System.out.println(per.getName());
 
-		// 7 ¡¢ bean Ïú»Ù·½·¨
+		// 7 ï¿½ï¿½ bean ï¿½ï¿½ï¿½Ù·ï¿½ï¿½ï¿½
 
-		// ÈÃ ioc ÈÝÆ÷ ¶ÔÓÚ bean ²úÉú ¾ßÌåµÄ ÉúÃü ÖÜÆÚ ·½·¨ £¬ Ö»Òª ¾ßÌåµÄ ÉúÃü ÖÜÆÚ ·½·¨ ´æÔÚ£¬
+		// ï¿½ï¿½ ioc ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ bean ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ö»Òª ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½Ú£ï¿½
 
-		// ²¢ÇÒÖªµÀÕâÐ©·½·¨ Ê²Ã´ Ê±ºò±»µ÷ÓÃ£¬ ÄÇÃ´ ¾Í¿ÉÒÔÔÚ¶ÔÓ¦µÄ·½·¨ÖÐ ×öÒ»Ð© ²Ù×÷
+		// ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½ï¿½ï¿½ Ê²Ã´ Ê±ï¿½ò±»µï¿½ï¿½Ã£ï¿½ ï¿½ï¿½Ã´ ï¿½Í¿ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½Ó¦ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò»Ð© ï¿½ï¿½ï¿½ï¿½
 
 		ClassPathXmlApplicationContext con = new ClassPathXmlApplicationContext("bean-life.xml");
 
 		Person per = (Person) con.getBean("per1");
 
 		System.out.println(per.getName());
-
+		//----------------------------------------åº·ç­”æ¡ˆçš„
+		// çš„å¥èº«å¡å°±çš„æ’’ä½³éƒ½ç§‘æŠ€æ’’è‚¯å¾·åŸºå¢å¡æ–¯å°½é‡å¿«ç‚¹è®°å½•å¡
 		con.close();
 
-		// ÎÒÊÇÇØÐñÐñ¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£
-		// ÎÒÊÇÇØÐñÐñ¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£
-		// ÎÒÊÇÇØÐñÐñ¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£
-		// ÎÒÊÇÇØÐñÐñ¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£
-		// ÎÒÊÇÇØÐñÐñ¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ñ¡£¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ñ¡£¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ñ¡£¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ñ¡£¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ñ¡£¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		//
 //------------------------------------------------
-		// ÎÒÊÇÀî²ÊÁú
-		// ÎÒÊÇÀî²ÊÁú
-		// ÎÒÊÇÀî²ÊÁú
-		// ÎÒÊÇÀî²ÊÁú
-		// ÎÒÊÇÀî²ÊÁú
-		// ÎÒÊÇÀî²ÊÁú
-		// ÎÒÊÇÀî²ÊÁú
-		// ÎÒÊÇÀî²ÊÁú
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 	}
 
