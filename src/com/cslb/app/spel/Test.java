@@ -15,6 +15,11 @@ public class Test {
 		Person per = (Person) con.getBean("person");
 		
 		System.out.println(per);
+		//ÎÒÊÇÇØÐñÐñ¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£
+				//ÎÒÊÇÇØÐñÐñ¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£
+				//ÎÒÊÇÇØÐñÐñ¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£
+				//ÎÒÊÇÇØÐñÐñ¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£
+				//ÎÒÊÇÇØÐñÐñ¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£
 
 	}
 
