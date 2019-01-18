@@ -9,6 +9,7 @@
 	<configs>
 		<config>src/bean-peron-spel.xml</config>
 		<config>src/bean-life.xml</config>
+		<config>src/com/cslb/hlf/oneaddone.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

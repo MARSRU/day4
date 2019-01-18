@@ -6,6 +6,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 
 	public static void main(String[] args) {
+		
+		
+		//我曾经划过山河大海，我曾
 		// 生命周期 ， 从 创建 --- 执行 --- 销毁
 
 		//
