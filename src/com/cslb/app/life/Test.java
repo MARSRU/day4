@@ -1,5 +1,5 @@
 package com.cslb.app.life;
-//cyh
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -7,26 +7,24 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		//啦啦啦啦啦啦啦啦啦啦啦
 		// 我曾经划过山河大海，我曾
 		// 生命周期 ， 从 创建 --- 执行 --- 销毁
-//啦啦啦啦啦啦啦啦啦啦啦
+
 		//
 		// ioc 容器 数据 注入 person
-//啦啦啦啦啦啦啦啦啦啦啦
+
 		// Person per = new Person();
 		//
 		// per.setName("张三");
 
-//啦啦啦啦啦啦啦啦啦啦啦
 		// ioc 容器 对象 调用 xml 文件 。 在通过这个对象 调用 bean 的id 进行 数据 注入 ，
-//啦啦啦啦啦啦啦啦啦啦啦
+
 		// ioc 容器 可以 对象 bean 进行 生命周期的管理
-//啦啦啦啦啦啦啦啦啦啦啦
+
 		// 当一个bean 被创建出来的时候， 就会 消耗内存 空间， 为了 节约 内存 ， 就要有 创建 ， 有销毁
-System.out.println(111);
+
 		// 既然 要创建 到销毁， 就要知道 这个bean 要执行 什么样的方法
-		//ssssss
+
 		// 1 、 bean 类 的 构造方法
 
 		// 2 、 bean 中 传值方法
