@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="car" class="com.cslb.app.spel.Car">
+    
+       <property name="carName" value="#{'Lsls'}"></property>
+       
+        <!--  T() 要调用 一个 静态 方法   或者  属性        T().属性名     就可以调用                      T(类的全包名 ).属性名  调用这个类中的  静态 属性                             --> 
+        <!-- <property name="width" value="#{T(java.lang.Math).PI}"></property> -->
+      <property name="width" value="#{T(com.cslb.app.spel.Dog).a}"></property>
+  
+    </bean>
+  
+     <bean id="dog" class="com.cslb.app.spel.Dog">
+        
+     
+     </bean>
+    
+
+	<bean  id="p" name="per,person" class="com.cslb.app.spel.Person" depends-on="car">
+<!--如果  要使用 一个类中的 方法  或 普通 属性，  必须  在 ioc xml 中  创建 bean , 通过 这个类 对应的  id 名 ， 调用  这个类中的  方法 或 属性  , 这个 方法 必须是 有 返回值得-->
+		<property name="name" value="#{dog.show()}"></property>
+		
+		<property name="age" value="#{dog.b + 20}"></property>
+		
+		<!--引入 另一个 bean中的 属性 ， 通过  spel 中 通过   bean 的id 名 进行引入 属性 -->
+		<property name="height" value="#{car.width}"></property>
+		
+		<!-- 通过  spel 引入  另一个  bean   -->
+	    <property name="car" value="#{car}"></property>
+	                        
+	  <!--     #{ boolean  : 值1  ?  值2   }   如果 boolean 值 为 true 那么 得到的 结果  为 值1 ， 如果为 false 的到的结果 为 值2                                         -->
+	   <!--  在 使用 注入的时候，  是无法 获取  当前 bean 中 注入的  值得  -->
+	   
+	    <property name="personType" value="#{ dog.b >=40 ? '成年人' : '未成年'  }   "></property>
+	    
+	    <!--  and 与         表达式1  and  表达式 2   如果 两个 结果 都是 true , 总的结果 为 true , 其中一为 false 结果就是 false
+	    
+	    or或         表达式1  or   表达式 2   只要一个表达式的结果为 true   总 结果就为 true         
+	     
+	    not 非        not 表达式        如果 这个表达式  为 true   总结果为fasle    ,       -->
+	    
+	    <property name="marray" value=" #{dog.b > 20 and  car.width >10} "></property>
+
+	</bean>
+	
+	 
+	
+	
+	
+
+</beans>

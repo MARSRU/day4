@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- ico 容器 对于 bean 的 生命 周期 具体到一个 方法中 -->
+
+	<bean id="per1" class="com.cslb.app.life.Person" init-method="abc"
+		destroy-method="destroy">
+
+		<property name="name" value="张三"></property>
+
+	</bean>
+	
+	<!-- 调用 bean per 之后  执行了  后置 处理器，    后置处理器中 的方法    在       per生命周期的       init初始化 方法的 前后 ， 执行过 -->
+	
+	
+
+	<bean id="car" class="com.cslb.app.life.Car">
+
+		<property name="carName" value="LsLs"></property>
+
+	</bean>
+
+
+    <bean class="com.cslb.app.life.MyBeanPostProcessor"></bean>
+
+
+</beans>
